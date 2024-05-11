@@ -1,0 +1,48 @@
+<html>
+    <body bgcolor=#d4a3ae>
+
+        <center>
+
+        <h1> HEART DISEASE PREDICTION </h1><br>
+
+        <form method="POST", action="{{url_for('home')}}">
+            <b>
+                Age: <input type="text", name="age"> <br><br>
+                Sex: <select name="sex">
+                    <option value="1">Male</option>
+                    <option value="0">Female</option>
+                </select> <br><br>
+                Chest Pain Type: <select name="chest pain type">
+                    <option value="1">Typical angina pain</option>
+                    <option value="2">Atypical angina pain</option>
+                    <option value="3">Non-anginal pain</option>
+                    <option value="4">Asymptomatic</option>
+                </select> <br><br>
+                Resting Blood Pressure: <input type="text", name="resting bp s"> <br><br>
+                Serum cholesterol: <input type="text", name="cholesterol"> <br><br>
+                Fasting Blood Pressure<select name="fasting blood sugar">
+                    <option value="1">True</option>
+                    <option value="0">False</option>
+                </select> <br><br>
+                Resting ECG: <input type="text", name="resting ecg"> <br><br>
+                Max heart rate: <input type="text", name="max heart rate"> <br><br>
+                Exercise Induced Angina:<select name="exercise angina">
+                    <option value="1">Yes</option>
+                    <option value="0">No</option>
+                </select> <br><br>
+                Old peak: <input type="text", name="old peak"> <br><br>
+                Slope of the peak:<select name="ST slope">
+                    <option value="1">Upslopping</option>
+                    <option value="2">Flat</option>
+                    <option value="3">Downslopping</option>
+                </select> <br><br>
+            </b>
+            <input type="submit" , value='Predict!'>
+        </form>
+        
+        
+        
+    </center>
+
+    </body>
+</html>
